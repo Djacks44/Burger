@@ -3,6 +3,8 @@
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
+USE fo9dya5408qz0iat;
+
 CREATE TABLE burgers
 (
 	id int NOT NULL AUTO_INCREMENT,

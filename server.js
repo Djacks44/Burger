@@ -1,16 +1,16 @@
 
 // Dependencies
-var Sequelize = require('sequelize'),
-	connection;
-if (process.env.JAWSDB_URL) {
+
+var Sequelize = require('sequelize'), connection;
+
+if (process.env.JAWSDB_URL){
 	connection = new Sequelize(process.env.JAWSDB_URL);
-}else{
-	connection = new Sequelize('burgers_db', 'root','', {
-		host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+}else {
+    connection = new Sequelize('fo9dya5408qz0iat', 'root', 'gpktecofnuj8ghx5', {
+        host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         dialect: 'mysql',
         port: '3306'
-
-	})
+    });
 }
 
 var express = require('express');
@@ -36,5 +36,5 @@ app.set('view engine', 'handlebars');
 var routes = require('./controllers/burgers_controller.js');
 app.use('/', routes);
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
