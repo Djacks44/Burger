@@ -1,0 +1,56 @@
+body{
+background-color: white;
+
+}
+
+#freshli {
+  background: #F6F6F6;
+  margin: 8px;
+  padding: 10px;
+}
+#eatenli {
+  background: #F6F6F6;
+  border:solid;
+  border-color: #CCCCCC;
+  color: #CCCCCC;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  background: #C7202B;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}h1{
+	padding: 0px;
+	margin: 2px;
+	margin-bottom: 8px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}#fresh{
+	float: left;
+	width: 40%;
+/*	border:solid;*/
+	margin-left: 50px;
+}#eaten{
+	float: right;
+	width: 40%;
+/*	border:solid;*/
+margin-right: 70px;
+
+}
+button{
+	background-color: #F6F6F6;
+}#Header{
+	color: #C7202B;
+}
+#full{
+	  background: #C7202B;
+	   margin-left: -10px;
+	   margin-right: -20px;
+}
