@@ -5,8 +5,8 @@ var Sequelize = require('sequelize'),
 if (process.env.JAWSDB_URL) {
 	connection = new Sequelize(process.env.JAWSDB_URL);
 }else{
-	connection = new Sequelize('burgers_db', 'root','', {
-		host: 'localhost',
+	connection = new Sequelize('fo9dya5408qz0iat', 'root','gpktecofnuj8ghx5', {
+		host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         dialect: 'mysql',
         port: '3306'
 
