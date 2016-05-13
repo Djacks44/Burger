@@ -1,11 +1,11 @@
 
 // Dependencies
-var Sequelize = require("sequelize"),
+var Sequelize = require('sequelize'),
 	connection;
 if (process.env.JAWSDB_URL) {
 	connection = new Sequelize(process.env.JAWSDB_URL);
 }else{
-	connection = new Sequelize('burgers_db', 'root','password', {
+	connection = new Sequelize('burgers_db', 'root','', {
 		host: 'localhost',
         dialect: 'mysql',
         port: '3306'
