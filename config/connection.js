@@ -12,11 +12,17 @@ var source = {
         user: 'root',
         password: "",
         database: "burgers_db"
+    },
+      jawsDB: {
+      host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+      user: 'meq63f89gznuzvte',
+      password: 'gpktecofnuj8ghx5',
+      database: '3306'
     }
 }
 
 // Selects a connection (can be changed quickly as needed)
-var selectedSource = source.localhost;
+var selectedSource = source.jawsDB;
 
 // Creates mySQL connection using Sequelize
 var sequelize = new Sequelize(selectedSource.database, selectedSource.user, selectedSource.password, {
@@ -32,17 +38,17 @@ var sequelize = new Sequelize(selectedSource.database, selectedSource.user, sele
 
 });
 
-var Sequelize = require('sequelize'), connection;
+// var Sequelize = require('sequelize'), connection;
 
-if (process.env.JAWSDB_URL){
-  connection = new Sequelize(process.env.JAWSDB_URL);
-}else {
-    connection = new Sequelize('fo9dya5408qz0iat', 'root', 'gpktecofnuj8ghx5', {
-        host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        dialect: 'mysql',
-        port: '3306'
-    });
-}
+// if (process.env.JAWSDB_URL){
+//   connection = new Sequelize(process.env.JAWSDB_URL);
+// }else {
+//     connection = new Sequelize('fo9dya5408qz0iat', 'root', 'gpktecofnuj8ghx5', {
+//         host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+//         dialect: 'mysql',
+//         port: '3306'
+//     });
+// }
 
 
 // Exports the connection for other files to use
