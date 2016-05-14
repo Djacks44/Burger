@@ -1,18 +1,6 @@
 
 // Dependencies
 
-var Sequelize = require('sequelize'), connection;
-
-if (process.env.JAWSDB_URL){
-	connection = new Sequelize(process.env.JAWSDB_URL);
-}else {
-    connection = new Sequelize('fo9dya5408qz0iat', 'root', 'gpktecofnuj8ghx5', {
-        host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        dialect: 'mysql',
-        port: '3306'
-    });
-}
-
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override')
