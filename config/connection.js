@@ -17,7 +17,8 @@ var source = {
       host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
       user: 'meq63f89gznuzvte',
       password: 'gpktecofnuj8ghx5',
-      database: '3306'
+      database: '',
+      port: '3306'
     }
 }
 
@@ -29,6 +30,7 @@ var sequelize = new Sequelize(selectedSource.database, selectedSource.user, sele
   define: { timestamps: false },
   host: selectedSource.host,
   dialect: 'mysql',
+  port: selectedSource.port,
 
   pool: {
     max: 5,
