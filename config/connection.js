@@ -9,7 +9,7 @@ var Sequelize = require("sequelize");
 var source = {
     localhost: {
         host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-        user: ' meq63f89gznuzvte',
+        user: 'meq63f89gznuzvte',
         password: 'gpktecofnuj8ghx5'
     }
 }
@@ -18,7 +18,7 @@ var source = {
 var selectedSource = source.localhost;
 
 // Creates mySQL connection using Sequelize
-var sequelize = new Sequelize(selectedSource.database, selectedSource.user, selectedSource.password, {
+var sequelize = new Sequelize(selectedSource.host, selectedSource.user, selectedSource.password, {
   define: { timestamps: false },
   host: selectedSource.host,
   dialect: 'mysql',
