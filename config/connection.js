@@ -10,8 +10,7 @@ var source = {
     localhost: {
         host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
         user: ' meq63f89gznuzvte',
-        password: 'gpktecofnuj8ghx5',
-        database: 'fo9dya5408qz0iat'
+        password: 'gpktecofnuj8ghx5'
     }
 }
 
